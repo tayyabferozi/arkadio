@@ -120,9 +120,29 @@ button {
   border: none;
   cursor: pointer;
   transition: 0.4s ease;
+}
 
-  &:hover {
-    opacity: 0.8;
+.nav-item {
+  a {
+    position: relative;
+
+    &:not(.btn-header):after {
+      content: "";
+      position: absolute;
+      background-color: $color2;
+      width: 0;
+      height: 2px;
+      left: 50%;
+      bottom: -5px;
+      transform: translateX(-50%);
+      transition: 0.4s ease;
+    }
+
+    &:hover {
+      &:not(.btn-header):after {
+        width: 100%;
+      }
+    }
   }
 }
 
@@ -263,6 +283,7 @@ button {
       }
 
       a {
+        position: relative;
         display: inline-block;
 
         @media screen and (max-width: 991px) {
@@ -275,10 +296,6 @@ button {
           &:not(.btn-header) {
             width: 100%;
           }
-        }
-
-        &:hover {
-          opacity: 0.85;
         }
       }
 

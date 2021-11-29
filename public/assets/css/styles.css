@@ -131,9 +131,26 @@ button {
   transition: 0.4s ease;
 }
 
-a:hover,
-button:hover {
-  opacity: 0.8;
+.nav-item a {
+  position: relative;
+}
+
+.nav-item a:not(.btn-header):after {
+  content: "";
+  position: absolute;
+  background-color: #2baa4a;
+  width: 0;
+  height: 2px;
+  left: 50%;
+  bottom: -5px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+.nav-item a:hover:not(.btn-header):after {
+  width: 100%;
 }
 
 #hamburger > * {
@@ -301,6 +318,7 @@ button:hover {
 }
 
 #navbar .nav .nav-item a {
+  position: relative;
   display: inline-block;
 }
 
@@ -317,10 +335,6 @@ button:hover {
   #navbar .nav .nav-item a:not(.btn-header) {
     width: 100%;
   }
-}
-
-#navbar .nav .nav-item a:hover {
-  opacity: 0.85;
 }
 
 #navbar .nav .nav-item .btn-header {
