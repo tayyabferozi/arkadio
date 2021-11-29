@@ -17,7 +17,7 @@
 
 @media screen and (max-width: 575px) {
   :root {
-    --section-padding: 1.5rem;
+    --section-padding: 1rem;
   }
 }
 
@@ -27,6 +27,8 @@
   list-style-type: none;
   text-decoration: none;
   font-family: "Poppins", sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -58,8 +60,14 @@ h1 {
 }
 
 h2 {
-  font-size: 48px;
+  font-size: 3.33vw;
   line-height: 57px;
+}
+
+@media screen and (min-width: 1441px) {
+  h2 {
+    font-size: 48px;
+  }
 }
 
 @media screen and (max-width: 1300px) {
@@ -104,6 +112,12 @@ h6 {
   font-size: 18px;
 }
 
+@media screen and (max-width: 575px) {
+  h6 {
+    font-size: 16px;
+  }
+}
+
 p {
   font-size: 16px;
 }
@@ -145,8 +159,27 @@ button:hover {
           transform: translateY(-4px);
 }
 
+.swiper-container-horizontal > .swiper-pagination-bullets {
+  bottom: -7px !important;
+}
+
+.swiper-pagination-bullet {
+  background-color: #2baa4a !important;
+  margin: 0 2px !important;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  width: 20px !important;
+  border-radius: 50px !important;
+}
+
 .container-fluid {
   max-width: 1340px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 !important;
 }
 
 #navbar,
@@ -223,8 +256,8 @@ button:hover {
     background: #020054;
     top: 0;
     padding: 2rem;
-    width: 91.5%;
-    left: -110%;
+    width: 100%;
+    left: -100%;
   }
   #navbar .nav.active {
     left: 0;
@@ -462,6 +495,27 @@ button:hover {
   color: #020054;
 }
 
+@media screen and (max-width: 595px) {
+  #services .text h2 {
+    font-size: 36px;
+    line-height: 50px;
+  }
+}
+
+@media screen and (max-width: 495px) {
+  #services .text h2 {
+    font-size: 32px;
+    line-height: 45px;
+  }
+}
+
+@media screen and (max-width: 445px) {
+  #services .text h2 {
+    font-size: 27px;
+    line-height: 38px;
+  }
+}
+
 #services .text h6 {
   color: #010054c4;
   font-weight: 500;
@@ -504,6 +558,12 @@ button:hover {
   }
 }
 
+@media screen and (max-width: 575px) {
+  #services .cards-container .card .text h4 {
+    font-size: 20px;
+  }
+}
+
 #services .cards-container .card .text p {
   font-size: 14px;
   margin-top: 1rem;
@@ -526,6 +586,12 @@ button:hover {
   }
 }
 
+@media screen and (max-width: 575px) {
+  #services .cards-container .card .text p {
+    font-size: 14px;
+  }
+}
+
 #about {
   padding: 7rem;
   position: relative;
@@ -542,6 +608,52 @@ button:hover {
   color: #020054;
 }
 
+@media screen and (max-width: 1060px) {
+  #about h2 {
+    font-size: 36px;
+    line-height: 45px;
+  }
+}
+
+@media screen and (max-width: 940px) {
+  #about h2 {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  #about h2 {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #about h2 {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 595px) {
+  #about h2 {
+    font-size: 36px;
+    line-height: 50px;
+  }
+}
+
+@media screen and (max-width: 495px) {
+  #about h2 {
+    font-size: 32px;
+    line-height: 45px;
+  }
+}
+
+@media screen and (max-width: 445px) {
+  #about h2 {
+    font-size: 27px;
+    line-height: 38px;
+  }
+}
+
 #about h6 {
   font-weight: 300;
   color: #828282;
@@ -549,9 +661,21 @@ button:hover {
 
 #about .testimonial {
   background-color: #fff;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-          box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   padding: 1rem;
+}
+
+@media screen and (max-width: 767px) {
+  #about .testimonial {
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  #about .testimonial {
+    padding: 0.5rem;
+  }
 }
 
 #about .testimonial .header {
@@ -586,6 +710,13 @@ button:hover {
   overflow: hidden;
 }
 
+@media screen and (max-width: 395px) {
+  #about .testimonial .header .user-info .user-img {
+    width: 45px;
+    height: 45px;
+  }
+}
+
 #about .testimonial .header .user-info .user-img img {
   width: 100%;
 }
@@ -595,10 +726,52 @@ button:hover {
   font-weight: bold;
 }
 
+@media screen and (max-width: 870px) and (min-width: 768px) {
+  #about .testimonial .header .user-info h6 {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 485px) {
+  #about .testimonial .header .user-info h6 {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 395px) {
+  #about .testimonial .header .user-info h6 {
+    font-size: 14px;
+  }
+}
+
 #about .testimonial .header .user-info small {
   font-weight: 300;
   color: #828282;
   font-size: 14px;
+}
+
+@media screen and (max-width: 870px) and (min-width: 768px) {
+  #about .testimonial .header .user-info small {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 485px) {
+  #about .testimonial .header .user-info small {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 395px) {
+  #about .testimonial .header .user-info small {
+    font-size: 9px;
+  }
+}
+
+@media screen and (max-width: 395px) {
+  #about .testimonial .header .logo {
+    width: 100px;
+  }
 }
 
 #about .testimonial .body {
@@ -614,6 +787,28 @@ button:hover {
 
 #portfolio h2 {
   color: #fff;
+  font-size: 3.33vw;
+}
+
+@media screen and (max-width: 1200px) and (min-width: 768px) {
+  #portfolio h2 {
+    font-size: 3.5vw;
+    line-height: 6vw;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #portfolio h2 {
+    font-size: 6.8vw;
+    line-height: 9vw;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  #portfolio h2 {
+    font-size: 7.5vw;
+    line-height: 11vw;
+  }
 }
 
 #portfolio h6 {
@@ -642,6 +837,12 @@ button:hover {
   margin-bottom: 0.675rem;
 }
 
+@media screen and (max-width: 895px) and (min-width: 768px) {
+  #portfolio .card .text h3 {
+    font-size: 19px;
+  }
+}
+
 #portfolio .card .text p {
   font-weight: 300;
   color: #bebebe;
@@ -661,6 +862,12 @@ button:hover {
   font-size: 14px;
   font-weight: 200;
   letter-spacing: 2px;
+}
+
+@media screen and (max-width: 640px) {
+  #footer h2 {
+    font-size: 35px;
+  }
 }
 
 #footer h6 {

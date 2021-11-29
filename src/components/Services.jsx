@@ -25,7 +25,7 @@ const Services = () => {
           </div>
 
           <div className="row cards-container">
-            <div className="col-lg-3 col-md-6 col-12">
+            <div className="col-lg-3 col-sm-6 col-12">
               <div className="card">
                 <div className="img">
                   <img src="./assets/vector/feature-1.svg" alt="feature-1" />
@@ -39,7 +39,7 @@ const Services = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-3 col-md-6 col-12">
+            <div className="col-lg-3 col-sm-6 col-12">
               <div className="card">
                 <div className="img">
                   <img src="./assets/vector/feature-2.svg" alt="feature-2" />
@@ -53,7 +53,7 @@ const Services = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-3 col-md-6 col-12">
+            <div className="col-lg-3 col-sm-6 col-12">
               <div className="card">
                 <div className="img">
                   <img src="./assets/vector/feature-3.svg" alt="feature-3" />
@@ -67,7 +67,7 @@ const Services = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-3 col-md-6 col-12">
+            <div className="col-lg-3 col-sm-6 col-12">
               <div className="card">
                 <div className="img">
                   <img src="./assets/vector/feature-4.svg" alt="feature-4" />

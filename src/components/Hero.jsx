@@ -3,8 +3,12 @@ import React from "react";
 const Hero = () => {
   return (
     <div id="hero">
-      <img src="./assets/vector/bg-hero-line.svg" className="line" alt="line" />
       <div className="container-fluid">
+        <img
+          src="./assets/vector/bg-hero-line.svg"
+          className="line"
+          alt="line"
+        />
         <div className="row">
           <div className="col-md-6 order-2 order-md-1 left d-flex justify-content-center align-items-start flex-column">
             <h1>

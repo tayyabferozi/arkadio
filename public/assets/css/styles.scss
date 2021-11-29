@@ -28,7 +28,7 @@ $color9: #828282;
 
 @media screen and (max-width: 575px) {
   :root {
-    --section-padding: 1.5rem;
+    --section-padding: 1rem;
   }
 }
 
@@ -38,6 +38,7 @@ $color9: #828282;
   list-style-type: none;
   text-decoration: none;
   font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
 }
 
 body {
@@ -63,8 +64,12 @@ h1 {
 }
 
 h2 {
-  font-size: 48px;
+  font-size: 3.33vw;
   line-height: 57px;
+
+  @media screen and (min-width: 1441px) {
+    font-size: 48px;
+  }
 
   @media screen and (max-width: 1300px) {
     font-size: 40px;
@@ -99,6 +104,10 @@ h5 {
 
 h6 {
   font-size: 18px;
+
+  @media screen and (max-width: 575px) {
+    font-size: 16px;
+  }
 }
 
 p {
@@ -139,8 +148,26 @@ button {
   }
 }
 
+.swiper-container-horizontal > .swiper-pagination-bullets {
+  bottom: -7px !important;
+}
+
+.swiper-pagination-bullet {
+  background-color: $color2 !important;
+  margin: 0 2px !important;
+  transition: 0.4s ease;
+
+  &.swiper-pagination-bullet-active {
+    width: 20px !important;
+    border-radius: 50px !important;
+  }
+}
+
 .container-fluid {
   max-width: 1340px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 !important;
 }
 
 #navbar,
@@ -198,8 +225,8 @@ button {
       background: $color1;
       top: 0;
       padding: 2rem;
-      width: 91.5%;
-      left: -110%;
+      width: 100%;
+      left: -100%;
 
       &.active {
         left: 0;
@@ -415,6 +442,21 @@ button {
 
     h2 {
       color: $color1;
+
+      @media screen and (max-width: 595px) {
+        font-size: 36px;
+        line-height: 50px;
+      }
+
+      @media screen and (max-width: 495px) {
+        font-size: 32px;
+        line-height: 45px;
+      }
+
+      @media screen and (max-width: 445px) {
+        font-size: 27px;
+        line-height: 38px;
+      }
     }
 
     h6 {
@@ -451,6 +493,10 @@ button {
           @media screen and (max-width: 767px) {
             font-size: 2.7vw;
           }
+
+          @media screen and (max-width: 575px) {
+            font-size: 20px;
+          }
         }
 
         p {
@@ -468,6 +514,10 @@ button {
 
           @media screen and (max-width: 625px) and (min-width: 576px) {
             font-size: 2.15vw;
+          }
+
+          @media screen and (max-width: 575px) {
+            font-size: 14px;
           }
         }
       }
@@ -488,6 +538,38 @@ button {
 
   h2 {
     color: $color1;
+
+    @media screen and (max-width: 1060px) {
+      font-size: 36px;
+      line-height: 45px;
+    }
+
+    @media screen and (max-width: 940px) {
+      font-size: 32px;
+    }
+
+    @media screen and (max-width: 860px) {
+      font-size: 28px;
+    }
+
+    @media screen and (max-width: 767px) {
+      font-size: 40px;
+    }
+
+    @media screen and (max-width: 595px) {
+      font-size: 36px;
+      line-height: 50px;
+    }
+
+    @media screen and (max-width: 495px) {
+      font-size: 32px;
+      line-height: 45px;
+    }
+
+    @media screen and (max-width: 445px) {
+      font-size: 27px;
+      line-height: 38px;
+    }
   }
 
   h6 {
@@ -497,12 +579,16 @@ button {
 
   .testimonial {
     background-color: #fff;
-    // border: 1px solid $color9;
-    // box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     padding: 1rem;
+
+    @media screen and (max-width: 767px) {
+      margin-top: 1rem;
+    }
+
+    @media screen and (max-width: 575px) {
+      padding: 0.5rem;
+    }
 
     .header {
       display: flex;
@@ -520,6 +606,11 @@ button {
           box-shadow: 100%;
           overflow: hidden;
 
+          @media screen and (max-width: 395px) {
+            width: 45px;
+            height: 45px;
+          }
+
           img {
             width: 100%;
           }
@@ -528,12 +619,42 @@ button {
         h6 {
           color: $color1;
           font-weight: bold;
+
+          @media screen and (max-width: 870px) and (min-width: 768px) {
+            font-size: 16px;
+          }
+
+          @media screen and (max-width: 485px) {
+            font-size: 16px;
+          }
+
+          @media screen and (max-width: 395px) {
+            font-size: 14px;
+          }
         }
 
         small {
           font-weight: 300;
           color: $color9;
           font-size: 14px;
+
+          @media screen and (max-width: 870px) and (min-width: 768px) {
+            font-size: 10px;
+          }
+
+          @media screen and (max-width: 485px) {
+            font-size: 10px;
+          }
+
+          @media screen and (max-width: 395px) {
+            font-size: 9px;
+          }
+        }
+      }
+
+      .logo {
+        @media screen and (max-width: 395px) {
+          width: 100px;
         }
       }
     }
@@ -552,6 +673,22 @@ button {
 
   h2 {
     color: #fff;
+    font-size: 3.33vw;
+
+    @media screen and (max-width: 1200px) and (min-width: 768px) {
+      font-size: 3.5vw;
+      line-height: 6vw;
+    }
+
+    @media screen and (max-width: 767px) {
+      font-size: 6.8vw;
+      line-height: 9vw;
+    }
+
+    @media screen and (max-width: 575px) {
+      font-size: 7.5vw;
+      line-height: 11vw;
+    }
   }
 
   h6 {
@@ -578,6 +715,10 @@ button {
 
       h3 {
         margin-bottom: 0.675rem;
+
+        @media screen and (max-width: 895px) and (min-width: 768px) {
+          font-size: 19px;
+        }
       }
 
       p {
@@ -601,6 +742,12 @@ button {
     font-size: 14px;
     font-weight: 200;
     letter-spacing: 2px;
+  }
+
+  h2 {
+    @media screen and (max-width: 640px) {
+      font-size: 35px;
+    }
   }
 
   h6 {

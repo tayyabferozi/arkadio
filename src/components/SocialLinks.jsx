@@ -2,8 +2,8 @@ import React from "react";
 
 const SocialLinks = () => {
   return (
-    <div id="social-links">
-      <div className="container-fluid py-5 social d-flex justify-content-center align-items-center">
+    <div id="social-links" className="py-5">
+      <div className="container-fluid social d-flex justify-content-center align-items-center">
         <div className="item">
           <img src="./assets/vector/slack.svg" alt="slack" />
         </div>
