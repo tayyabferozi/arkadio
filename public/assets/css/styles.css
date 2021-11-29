@@ -160,7 +160,7 @@ button:hover {
 }
 
 .swiper-container-horizontal > .swiper-pagination-bullets {
-  bottom: -7px !important;
+  bottom: 3px !important;
 }
 
 .swiper-pagination-bullet {
@@ -659,10 +659,14 @@ button:hover {
   color: #828282;
 }
 
-#about .testimonial {
-  background-color: #fff;
+#about .swiper-container {
   -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
           box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding-bottom: 1rem;
+}
+
+#about .testimonial {
+  background-color: #fff;
   padding: 1rem;
 }
 

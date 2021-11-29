@@ -149,7 +149,7 @@ button {
 }
 
 .swiper-container-horizontal > .swiper-pagination-bullets {
-  bottom: -7px !important;
+  bottom: 3px !important;
 }
 
 .swiper-pagination-bullet {
@@ -577,9 +577,13 @@ button {
     color: $color9;
   }
 
+  .swiper-container {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding-bottom: 1rem;
+  }
+
   .testimonial {
     background-color: #fff;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     padding: 1rem;
 
     @media screen and (max-width: 767px) {
