@@ -403,6 +403,10 @@ button:hover {
   z-index: -1;
 }
 
+#social-links .container-fluid {
+  width: unset;
+}
+
 @media screen and (max-width: 575px) {
   #social-links .social {
     -ms-flex-wrap: wrap;

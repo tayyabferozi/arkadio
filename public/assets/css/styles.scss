@@ -361,6 +361,10 @@ button {
 }
 
 #social-links {
+  .container-fluid {
+    width: unset;
+  }
+
   .social {
     @media screen and (max-width: 575px) {
       flex-wrap: wrap;
