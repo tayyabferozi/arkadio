@@ -8,6 +8,10 @@ const Navbar = () => {
     setisSideNavActive((prevState) => !prevState);
   };
 
+  const hideSideNav = () => {
+    setisSideNavActive(false);
+  };
+
   return (
     <div id="navbar">
       <div className="container-fluid">
@@ -28,18 +32,22 @@ const Navbar = () => {
             &times;
           </div>
           <li className="nav-item">
-            <Link to="#about" offset={-100}>
+            <Link smooth onClick={hideSideNav} to="about" offset={-100}>
               About
             </Link>
           </li>
           <li className="nav-item">
-            <Link to="#services">Services</Link>
+            <Link smooth onClick={hideSideNav} to="services" offset={-100}>
+              Services
+            </Link>
           </li>
           <li className="nav-item">
-            <Link to="#portfolio">Portfolio</Link>
+            <Link smooth onClick={hideSideNav} to="portfolio" offset={-100}>
+              Portfolio
+            </Link>
           </li>
           <li className="nav-item">
-            <a className="btn-header" href="mailto:#">
+            <a onClick={hideSideNav} className="btn-header" href="mailto:#">
               Contact
             </a>
           </li>

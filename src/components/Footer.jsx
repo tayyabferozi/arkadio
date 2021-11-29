@@ -1,21 +1,25 @@
-import React from "react";
+import Slide from "react-reveal/Slide";
 
 const Footer = () => {
   return (
     <div id="footer">
       <div className="container-fluid">
-        <small>UPSKILL FOR A BETTER FUTURE</small>
+        <Slide bottom cascade>
+          <div>
+            <small>UPSKILL FOR A BETTER FUTURE</small>
 
-        <h2 className="mt-3 mb-4">Request More Information</h2>
+            <h2 className="mt-3 mb-4">Request More Information</h2>
 
-        <h6 className="mx-auto mb-5">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet augue
-          eget pretium fames nibh. Eget mauris tristique odio.
-        </h6>
+            <h6 className="mx-auto mb-5">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet
+              augue eget pretium fames nibh. Eget mauris tristique odio.
+            </h6>
 
-        <button className="btn">START A PROJECT</button>
+            <button className="btn">START A PROJECT</button>
 
-        <p className="copyright mt-5 mb-5">&copy; 2021 Arkadio Digital</p>
+            <p className="copyright mt-5 mb-5">&copy; 2021 Arkadio Digital</p>
+          </div>
+        </Slide>
 
         <hr />
 

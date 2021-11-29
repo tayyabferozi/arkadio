@@ -1,4 +1,4 @@
-import React from "react";
+import Fade from "react-reveal/Fade";
 
 const Portfolio = () => {
   return (
@@ -14,62 +14,70 @@ const Portfolio = () => {
               urna,
             </h6>
 
-            <div className="card mt-4">
-              <div className="img">
-                <img src="./assets/img/portfolio-2.png" alt="2" />
+            <Fade>
+              <div className="card mt-4">
+                <div className="img">
+                  <img src="./assets/img/portfolio-2.png" alt="2" />
+                </div>
+                <div className="text">
+                  <h3>Restaurant Website Design</h3>
+                  <p>
+                    I worked with the guys at CBRE to redesign their entire
+                    website and mobile app fro both Android and iOS. This
+                    project lasted for 4 months and was a very challenging one.
+                  </p>
+                </div>
               </div>
-              <div className="text">
-                <h3>Restaurant Website Design</h3>
-                <p>
-                  I worked with the guys at CBRE to redesign their entire
-                  website and mobile app fro both Android and iOS. This project
-                  lasted for 4 months and was a very challenging one.
-                </p>
-              </div>
-            </div>
+            </Fade>
 
-            <div className="card mt-4">
-              <div className="img">
-                <img src="./assets/img/portfolio-4.png" alt="4" />
+            <Fade>
+              <div className="card mt-4">
+                <div className="img">
+                  <img src="./assets/img/portfolio-4.png" alt="4" />
+                </div>
+                <div className="text">
+                  <h3>Restaurant Website Design</h3>
+                  <p>
+                    I worked with the guys at CBRE to redesign their entire
+                    website and mobile app fro both Android and iOS. This
+                    project lasted for 4 months and was a very challenging one.
+                  </p>
+                </div>
               </div>
-              <div className="text">
-                <h3>Restaurant Website Design</h3>
-                <p>
-                  I worked with the guys at CBRE to redesign their entire
-                  website and mobile app fro both Android and iOS. This project
-                  lasted for 4 months and was a very challenging one.
-                </p>
-              </div>
-            </div>
+            </Fade>
           </div>
           <div className="col-md-6">
-            <div className="card">
-              <div className="img">
-                <img src="./assets/img/portfolio-1.png" alt="1" />
+            <Fade>
+              <div className="card">
+                <div className="img">
+                  <img src="./assets/img/portfolio-1.png" alt="1" />
+                </div>
+                <div className="text">
+                  <h3>Restaurant Website Design</h3>
+                  <p>
+                    I worked with the guys at CBRE to redesign their entire
+                    website and mobile app fro both Android and iOS. This
+                    project lasted for 4 months and was a very challenging one.
+                  </p>
+                </div>
               </div>
-              <div className="text">
-                <h3>Restaurant Website Design</h3>
-                <p>
-                  I worked with the guys at CBRE to redesign their entire
-                  website and mobile app fro both Android and iOS. This project
-                  lasted for 4 months and was a very challenging one.
-                </p>
-              </div>
-            </div>
+            </Fade>
 
-            <div className="card mt-4">
-              <div className="img">
-                <img src="./assets/img/portfolio-3.png" alt="3" />
+            <Fade>
+              <div className="card mt-4">
+                <div className="img">
+                  <img src="./assets/img/portfolio-3.png" alt="3" />
+                </div>
+                <div className="text">
+                  <h3>Restaurant Website Design</h3>
+                  <p>
+                    I worked with the guys at CBRE to redesign their entire
+                    website and mobile app fro both Android and iOS. This
+                    project lasted for 4 months and was a very challenging one.
+                  </p>
+                </div>
               </div>
-              <div className="text">
-                <h3>Restaurant Website Design</h3>
-                <p>
-                  I worked with the guys at CBRE to redesign their entire
-                  website and mobile app fro both Android and iOS. This project
-                  lasted for 4 months and was a very challenging one.
-                </p>
-              </div>
-            </div>
+            </Fade>
 
             <div className="text-center mt-5 pt-4">
               <button className="btn mt-2">VIEW ALL PROJECTS</button>
