@@ -15,7 +15,9 @@ const Footer = () => {
               augue eget pretium fames nibh. Eget mauris tristique odio.
             </h6>
 
-            <button className="btn">START A PROJECT</button>
+            <div>
+              <button className="btn">START A PROJECT</button>
+            </div>
 
             <p className="copyright mt-5 mb-5">&copy; 2021 Arkadio Digital</p>
           </div>

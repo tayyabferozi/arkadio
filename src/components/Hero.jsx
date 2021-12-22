@@ -22,8 +22,9 @@ const Hero = () => {
                   Sollicitudin congue feugiat nunc libero. Ac iscing facilisis
                   fringilla amet
                 </h4>
-
-                <button className="btn mt-4">Start a project</button>
+                <div>
+                  <button className="btn mt-4">Start a project</button>
+                </div>
               </div>
             </Fade>
           </div>
